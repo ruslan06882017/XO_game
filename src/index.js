@@ -1,17 +1,16 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactDOM from "react-dom";
+import Layout from "./hoc/Layout.jsx";
+import Quiz from "./containers/Quiz/Quiz.jsx";
 
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class App extends Component {
 
   render() {
     return (
-      <div className="App">
-      </div>
-    );
+      <Layout>
+        <Quiz />
+      </Layout>
+    ); 
   }
 }
 
